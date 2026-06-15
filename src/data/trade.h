@@ -1243,12 +1243,12 @@ static const struct InGameTrade sIngameTrades[] =
     [INGAME_TRADE_NUMEL] =
     {
         .nickname = _("MEL"),
-        .species = SPECIES_NUMEL,
-        .ivs = {15, 16, 13, 13, 17, 15},
+        .species = SPECIES_DUNSPARCE,
+        .ivs = {31, 31, 31, 31, 31, 31},
         .abilityNum = 0,
         .otId = 38727,
         .conditions = {30, 5, 5, 5, 5},
-        .personality = 0x84,
+        .personality = 0x7F,
         .heldItem = ITEM_CHESTO_BERRY,
         .mailNum = -1,
         .otName = _("MARLI"),
