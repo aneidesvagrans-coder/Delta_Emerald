@@ -67,12 +67,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_MEGA_PUNCH] =
     {
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SLEEP,
         .power = 90,
         .type = TYPE_NORMAL,
         .accuracy = 95,
-        .pp = 20,
-        .secondaryEffectChance = 0,
+        .pp = 10,
+        .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
@@ -912,12 +912,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_STRENGTH] =
     {
-        .effect = EFFECT_HIT,
-        .power = 90,
-        .type = TYPE_NORMAL,
+        .effect = EFFECT_ATTACK_UP_HIT,
+        .power = 80,
+        .type = TYPE_ROCK,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
@@ -2632,7 +2632,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 75,
         .type = TYPE_GRASS,
         .accuracy = 100,
-        .pp = 15,
+        .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -4084,13 +4084,13 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_AIR_CUTTER] =
     {
-        .effect = EFFECT_HIGH_CRITICAL,
-        .power = 65,
+        .effect = EFFECT_FLINCH_HIT,
+        .power = 75,
         .type = TYPE_FLYING,
         .accuracy = 95,
-        .pp = 25,
-        .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_BOTH,
+        .pp = 20,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
@@ -4426,7 +4426,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .power = 85,
         .type = TYPE_FLYING,
         .accuracy = 90,
-        .pp = 15,
+        .pp = 10,
         .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
